@@ -37,7 +37,7 @@ function App() {
   return (
     <Container>
       <div className="navigation">
-        <h1>Libraries</h1>
+        <h1>React Libraries</h1>
         <nav>
           <NavLink
             className={({ isActive }) => (isActive ? 'active' : '')}
