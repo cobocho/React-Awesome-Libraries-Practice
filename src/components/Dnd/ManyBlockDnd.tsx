@@ -99,14 +99,19 @@ const ManyBlockDnd = () => {
           ref={inputRef}
         />
         <button
-        // onClick={() => {
-        //   if (inputRef.current!.value === '') return;
+          onClick={() => {
+            if (inputRef.current!.value === '') return;
 
-        //   setData((prev) => {
-        //     ...prev,
-        //     { id: Math.random().toString(), content: inputRef.current!.value },
-        //   });
-        // }}
+            setData((prev) => {
+              return {
+                ...prev,
+                first: [
+                  ...prev.first,
+                  { id: Math.random().toString(), content: inputRef.current!.value },
+                ],
+              };
+            });
+          }}
         >
           add
         </button>
