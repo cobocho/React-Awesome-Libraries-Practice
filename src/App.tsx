@@ -1,9 +1,9 @@
 import { NavLink, Route, Routes } from 'react-router-dom';
 import { styled } from 'styled-components';
 import SlickPage from './pages/SlickPage';
-import DndPage from './pages/dndPage';
-import ModalPage from './pages/modalpage';
-import DaypickerPage from './pages/daypickerPage';
+import DndPage from './pages/DndPage';
+import ModalPage from './pages/ModalPage';
+import DaypickerPage from './pages/DaypickerPage';
 import TimepickerPage from './pages/TimepickerPage';
 
 const Container = styled.div`
