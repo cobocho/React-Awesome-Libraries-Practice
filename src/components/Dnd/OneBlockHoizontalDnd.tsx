@@ -98,7 +98,7 @@ const OneBlockHoizontalDnd = () => {
             droppableId="first"
             direction="horizontal"
           >
-            {(provided, snapshot) => (
+            {(provided) => (
               <div
                 className="first"
                 {...provided.droppableProps}
