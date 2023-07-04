@@ -5,6 +5,8 @@ import DndPage from './pages/DndPage';
 import ModalPage from './pages/ModalPage';
 import DaypickerPage from './pages/DaypickerPage';
 import TimepickerPage from './pages/TimepickerPage';
+import KaKaoLoginPage from './pages/KaKaoLoginPage';
+import KakaoAuthCallback from './pages/KakaoAuthCallback';
 
 const Container = styled.div`
   display: flex;
@@ -69,6 +71,12 @@ function App() {
           >
             daypicker
           </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/kakao-login"
+          >
+            kakao login
+          </NavLink>
         </nav>
       </div>
       <Routes>
@@ -91,6 +99,14 @@ function App() {
         <Route
           path="/daypicker"
           element={<DaypickerPage />}
+        />
+        <Route
+          path="/kakao-login"
+          element={<KaKaoLoginPage />}
+        />
+        <Route
+          path="/kakao-login/auth"
+          element={<KakaoAuthCallback />}
         />
       </Routes>
     </Container>
