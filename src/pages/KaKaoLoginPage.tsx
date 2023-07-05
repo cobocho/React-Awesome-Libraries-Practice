@@ -16,16 +16,6 @@ const Container = styled.div`
 `;
 
 const KaKaoLoginPage = () => {
-  useEffect(() => {
-    async function fetchData() {
-      const data = await fetch('/api/hello-entity');
-
-      const result = await data.json();
-      console.log(result);
-    }
-    fetchData();
-  }, []);
-
   return (
     <Container>
       <LoginButton />
