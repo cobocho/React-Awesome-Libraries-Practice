@@ -1,6 +1,5 @@
 import { styled } from 'styled-components';
 import LoginButton from '../components/Login/LoginButton';
-import { useEffect } from 'react';
 
 const Container = styled.div`
   display: flex;
